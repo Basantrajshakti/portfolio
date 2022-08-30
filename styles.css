@@ -182,3 +182,31 @@ i {
     margin-left: 0;
   }
 }
+
+
+/* ?Desktop codes */
+@media (min-width:60rem) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-section {
+    grid-row: span 2;
+  }
+
+  .project-section {
+    grid-column: span 2;
+  }
+
+  .project-section__projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .project-section__project-item {
+
+    width: calc(50% - 1rem);
+  }
+}
