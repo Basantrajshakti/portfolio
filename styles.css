@@ -119,3 +119,19 @@ i {
 .project-section__project-link a {
   text-decoration: underline;
 }
+
+
+/* ?education section */
+.education-section__course {
+  padding-block: 1.5rem 0.5rem;
+}
+
+.education-section__course-details {
+  list-style: none;
+  color: var(--text-color);
+  padding-left: 1rem;
+}
+
+.education-section__course-details li {
+  padding-bottom: 0.2rem;
+}
