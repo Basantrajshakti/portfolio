@@ -101,3 +101,21 @@ i {
   padding-block: 1rem;
   border-top: 1px solid rgb(214, 214, 214);
 }
+
+
+/* ?Project section */
+.project-section__projects {
+  padding-inline: 1rem;
+}
+
+.project-section__project {
+  padding-block: 1.2rem 0.6rem;
+}
+
+.project-section__project-link {
+  padding-bottom: 0.3rem;
+}
+
+.project-section__project-link a {
+  text-decoration: underline;
+}
