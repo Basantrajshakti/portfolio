@@ -167,3 +167,18 @@ i {
 .footer__icons i:hover {
   color: rgb(158, 158, 158);
 }
+
+
+/* ?tablet code */
+@media (min-width:38rem) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-section,
+  .education-section 
+  {
+    margin-left: 0;
+  }
+}
