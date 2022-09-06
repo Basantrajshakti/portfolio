@@ -2,7 +2,29 @@ const bar90 = document.querySelectorAll('.bar90');
 const bar85 = document.querySelectorAll('.bar85');
 const bar80 = document.querySelectorAll('.bar80');
 
-window.onload = () => {
-  console.log(bar90);
+function showTransition() {
+  bar90.forEach(e => {
+    e.style.width = '90%'
+  });
+
+  bar85.forEach(e => {
+    e.style.width = '85%'
+  });
+
+  bar80.forEach(e => {
+    e.style.width = '80%'
+  });
 }
-  bar90[0].style.width = '90%';
+
+document.body.onscroll = () => {
+  console.log(window.innerWidth);
+  if (document.documentElement.scrollTop >= 350
+    && window.innerWidth <= 600) {
+    showTransition();
+  }
+
+  if (document.documentElement.scrollTop >= 100
+    && window.innerWidth >= 600) {
+    showTransition();
+  }
+} 
